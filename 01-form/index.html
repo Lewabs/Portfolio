@@ -14,7 +14,7 @@
   <main>
     <div class="title-form">
       <h1>freeCodeCamp Survey Form</h1>
-      <p>This is my first real project with FreeCodeCamp, so please be lenient!</p>
+      <p>This is my first project with FreeCodeCamp, so please be lenient !</p>
     </div>
 
     <!-- Form -->
@@ -23,24 +23,24 @@
 
       <!-- Text -->
       <div class="name-form">
-        <label for="name" class="label-title">Name*</label>
+        <label for="name" class="label-title">Name *</label>
         <input name="name" id="name" type="text" placeholder="Enter your name" required />
       </div>
 
       <div class="email-form">
-        <label for="email" class="label-title">Email*</label>
+        <label for="email" class="label-title">Email *</label>
         <input name="email" id="email" type="email" placeholder="Enter your Email" required />
       </div>
 
       <div class="age-form">
-        <label for="age" class="label-title">Age*</label>
+        <label for="age" class="label-title">Age *</label>
         <input name="age" id="age" type="number" min="10" max="120" placeholder="Enter your age" required />
       </div>
 
       <!-- Select, radios & checkbox -->
       <div class="select-form">
         <label for="dropdown" class="label-title">If you had to choose one type of game, which one would you choose
-          ?*</label>
+          ? *</label>
         <select id="dropdown" required>
           <option value="" disabled selected>(Select an option)</option>
           <option value="shooter">Shooter</option>
@@ -84,7 +84,7 @@
 
       <div class="checkbox-form">
         <label class="label-title">
-          Which esport teams do you support ?
+          Which esports team(s) do you support?
         </label>
         <label for="KC">
           <input type="checkbox" id="KC" name="fav-esport-team" value="KC" />
@@ -129,7 +129,7 @@
       </div>
 
       <label for="speech-form" class="label-title">
-        Anything to say about my first website ?
+        Anything to say about this website ?
         <textarea id="speech" name="speech" placeholder="Leave your feedback here !" rows="5" maxlength="3000"
           oninput="autoResize(this)"></textarea>
       </label>
@@ -142,11 +142,16 @@
   </main>
 
   <footer>
-    <p>This project was made by <em><a href="https://www.freecodecamp.org/Lewabs" target="_blank">Médéric
-          Mathieu</a></em></p>
-    <p><a href="https://codepen.io/oscar-jite/pen/dyQJNgJ" target="_blank">Button source</a></p>
-    <p>I used <a href="https://survey-form.freecodecamp.rocks/" target="_blank">this example</a> to build my website.
-    </p>
+    <div class="footer-link">
+      <p>This project was made by <em><a href="https://www.freecodecamp.org/Lewabs" target="_blank">Médéric
+            Mathieu</a></em></p>
+      <p><a href="https://codepen.io/oscar-jite/pen/dyQJNgJ" target="_blank">Button source</a></p>
+      <p>I used <a href="https://survey-form.freecodecamp.rocks/" target="_blank">this example</a> to build my website.
+      </p>
+    </div>
+
+    <p class="footer-info">Please note that none of the data you submit is saved. This site is for demonstration
+      purposes only and does not store any information.</p>
   </footer>
 
   <script src="js/script.js"></script>
