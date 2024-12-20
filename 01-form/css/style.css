@@ -1,0 +1,208 @@
+/* Import styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap");
+
+/* Variables */
+:root {
+  --primary-color: rgb(255, 125, 37);
+  --bg-image: url("https://preview.redd.it/high-quality-4k-promotional-wallpaper-background-v0-0l2pvt0c4ncc1.png?width=3840&format=png&auto=webp&s=fd1e9cb30510d255fb233204ac6418ce0d830579");
+}
+
+/* Global styles */
+body {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-image) no-repeat center center fixed;
+  background-size: cover;
+  color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.title-form {
+  text-align: center;
+}
+
+.label-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Form global style */
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(11, 30, 38, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 0 50px 0 rgba(23, 78, 125, 0.8);
+  line-height: 3;
+  margin: auto;
+  margin-top: 10vh;
+  width: 50%;
+}
+
+.required-symbol {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.7rem;
+  margin-right: 1.5em;
+}
+
+/* Form elements style */
+input,
+select,
+textarea {
+  display: block;
+  background-color: rgb(23, 50, 70);
+  width: 90%;
+  height: 2.3em;
+  margin-bottom: 2em;
+  margin-left: 2em;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  text-indent: 0.5rem;
+  font-size: 0.9rem;
+}
+
+label {
+  display: block;
+  padding-left: 2rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline-block;
+  margin: 0;
+  width: 0.9em;
+  height: 0.9em;
+}
+
+.select-form,
+.checkbox-form,
+.radio-form {
+  margin-bottom: 1.5em;
+}
+
+textarea {
+  margin: 0;
+  resize: none;
+  height: auto;
+  width: 95%;
+}
+/*
+button {
+  width: 15vw;
+  height: 10vh;
+  margin: 2em auto;
+  font-size: 1.3em;
+  background-color: rgb(97, 130, 42);
+  color: rgb(11, 30, 38);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(30, 100, 161);
+}
+*/
+
+/* Button style made by Oscar-Jite (See the footer)*/
+button {
+  width: 12vw;
+  height: 10vh;
+  margin: 2em auto;
+  position: relative;
+  padding: 15px 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  border: 2px solid #00c2cb;
+  background: none;
+  color: #00c2cb;
+  cursor: pointer;
+  outline: none;
+  transition: 200ms;
+}
+i {
+  position: absolute;
+  color: transparent;
+  transition: 200ms;
+}
+
+button:hover {
+  width: 15vw;
+  height: 10vh;
+  margin: 2em auto;
+  position: relative;
+  padding: 15px 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  border: 2px solid rgb(23, 50, 70);
+  background-color: #00c2cb;
+  color: rgb(23, 50, 70);
+  cursor: pointer;
+  outline: none;
+  transition: 200ms;
+}
+
+button:focus {
+  color: transparent;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 25px 25px;
+  border-left: 2px solid #00c2cb;
+  animation: spin 2s 500ms forwards;
+}
+button:focus i {
+  animation: check 300ms 2250ms forwards;
+}
+
+@keyframes spin {
+  80% {
+    border: 2px solid transparent;
+    border-left: 2px solid #00c2cb;
+  }
+  100% {
+    transform: rotate(720deg);
+    border: 2px solid #00c2cb;
+  }
+}
+
+@keyframes check {
+  to {
+    color: #00c2cb;
+  }
+}
+
+/* Footer styles */
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(11, 30, 38, 0.9);
+  height: 12vh;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-top: 5em;
+}
+
+/* Link styles */
+a {
+  color: var(--orange);
+}
+
+a:hover {
+  color: rgb(30, 100, 161);
+}
+
+a:active {
+  color: rgb(97, 130, 42);
+}

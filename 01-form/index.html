@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>freeCodeCamp Survey Form</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <main>
+    <div class="title-form">
+      <h1>freeCodeCamp Survey Form</h1>
+      <p>This is my first real project with FreeCodeCamp, so please be lenient!</p>
+    </div>
+
+    <!-- Form -->
+    <form method="post" action="#" id="survey-form">
+      <p class="required-symbol">Fields with * are required.</p>
+
+      <!-- Text -->
+      <div class="name-form">
+        <label for="name" class="label-title">Name*</label>
+        <input name="name" id="name" type="text" placeholder="Enter your name" required />
+      </div>
+
+      <div class="email-form">
+        <label for="email" class="label-title">Email*</label>
+        <input name="email" id="email" type="email" placeholder="Enter your Email" required />
+      </div>
+
+      <div class="age-form">
+        <label for="age" class="label-title">Age*</label>
+        <input name="age" id="age" type="number" min="10" max="120" placeholder="Enter your age" required />
+      </div>
+
+      <!-- Select, radios & checkbox -->
+      <div class="select-form">
+        <label for="dropdown" class="label-title">If you had to choose one type of game, which one would you choose
+          ?*</label>
+        <select id="dropdown" required>
+          <option value="" disabled selected>(Select an option)</option>
+          <option value="shooter">Shooter</option>
+          <option value="rogue-like">Rogue Like</option>
+          <option value="rpg">RPG</option>
+          <option value="strategy">Strategy</option>
+          <option value="fighting">Fighting</option>
+          <option value="survival">Survival</option>
+          <option value="horror">Horror</option>
+          <option value="card">Card Game</option>
+          <option value="racing">Racing</option>
+          <option value="other">Another style</option>
+          <option value="any">I'm a looser I don't like video games.</option>
+        </select>
+      </div>
+
+      <div class="radio-form">
+        <label for="feeling" class="label-title">Does this project give you a positive impression of what I can do
+          ?</label>
+        <label for="very-good">
+          <input type="radio" id="very-good" name="feeling" value="very-good" />
+          Yes of course, I'm really happy with it!
+        </label>
+        <label for="good">
+          <input type="radio" id="good" name="feeling" value="good" />
+          Yes, It’s pretty good!
+        </label>
+        <label for="mid">
+          <input type="radio" id="mid" name="feeling" value="mid" />
+          It’s okay, I guess.
+        </label>
+        <label for="bad">
+          <input type="radio" id="bad" name="feeling" value="bad" />
+          Not really, I’m not thrilled with it...
+        </label>
+        <label for="very-bad">
+          <input type="radio" id="very-bad" name="feeling" value="very-bad" />
+          Not at all, I’m really disappointed.
+        </label>
+      </div>
+
+      <div class="checkbox-form">
+        <label class="label-title">
+          Which esport teams do you support ?
+        </label>
+        <label for="KC">
+          <input type="checkbox" id="KC" name="fav-esport-team" value="KC" />
+          Karmine Corp
+        </label>
+        <label for="G2">
+          <input type="checkbox" id="G2" name="fav-esport-team" value="G2" />
+          G2 Esport
+        </label>
+        <label for="loud">
+          <input type="checkbox" id="loud" name="fav-esport-team" value="Loud" />
+          Loud
+        </label>
+        <label for="KOI">
+          <input type="checkbox" id="KOI" name="fav-esport-team" value="KOI" />
+          KOI
+        </label>
+        <label for="VIT">
+          <input type="checkbox" id="VIT" name="fav-esport-team" value="VIT" />
+          Vitality
+        </label>
+        <label for="FNC">
+          <input type="checkbox" id="FNC" name="fav-esport-team" value="FNC" />
+          Fnatic
+        </label>
+        <label for="T1">
+          <input type="checkbox" id="T1" name="fav-esport-team" value="T1" />
+          T1
+        </label>
+        <label for="faze">
+          <input type="checkbox" id="faze" name="fav-esport-team" value="Faze" />
+          Faze Clan
+        </label>
+        <label for="other">
+          <input type="checkbox" id="other" name="fav-esport-team" value="other" />
+          Another esport team
+        </label>
+        <label for="any">
+          <input type="checkbox" id="any" name="fav-esport-team" value="any" />
+          I don't support any esport team
+        </label>
+      </div>
+
+      <label for="speech-form" class="label-title">
+        Anything to say about my first website ?
+        <textarea id="speech" name="speech" placeholder="Leave your feedback here !" rows="5" maxlength="3000"
+          oninput="autoResize(this)"></textarea>
+      </label>
+
+      <button type="submit" value="submit">
+        Submit
+        <i class="fa-solid fa-check">&#10004;</i>
+      </button>
+    </form>
+  </main>
+
+  <footer>
+    <p>This project was made by <em><a href="https://www.freecodecamp.org/Lewabs" target="_blank">Médéric
+          Mathieu</a></em></p>
+    <p><a href="https://codepen.io/oscar-jite/pen/dyQJNgJ" target="_blank">Button source</a></p>
+    <p>I used <a href="https://survey-form.freecodecamp.rocks/" target="_blank">this example</a> to build my website.
+    </p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
