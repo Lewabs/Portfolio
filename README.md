@@ -1,6 +1,8 @@
-# freecodecamp-projects
- Hello and welcome ! This repository contains all the FreeCodeCamp projects I completed during my training. So please be lenient with me, i'm still learning !
- 
- Check out my projects links below :
+# Portfolio
+ <div align="center">
+ Hello and welcome to my portfolio ! This repository contains all my personnal projects, including the projects I completed during my training on FreeCodeCamp.
+ <i>Please be lenient with me, i'm still learning ! 😉</i>
+ </div>
 
- 1. Form : https://lewabs.github.io/freecodecamp-projects/01-form/
+## Check out my projects links below :
+ - [Responsive survey form (with an "Outer Wilds" theme)](https://lewabs.github.io/Portfolio/freecodecamp-projects/01-responsive-survey-form/)
