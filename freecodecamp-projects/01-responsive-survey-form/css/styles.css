@@ -1,19 +1,16 @@
 /* Import styles */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap");
 
-/* Variables */
-:root {
-  --primary-color: rgb(255, 125, 37);
-  --bg-image: url("https://preview.redd.it/high-quality-4k-promotional-wallpaper-background-v0-0l2pvt0c4ncc1.png?width=3840&format=png&auto=webp&s=fd1e9cb30510d255fb233204ac6418ce0d830579");
-}
-
 /* Global styles */
-body {
+
+body,
+html {
   display: flex;
   flex-direction: column;
-  background: var(--bg-image) no-repeat center center fixed;
+  background: url(../assets/images/bg-image.png) no-repeat center center fixed;
   background-size: cover;
-  color: var(--primary-color);
+  background-color: rgba(11, 30, 38, 1);
+  color: rgb(255, 125, 37);
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
@@ -110,7 +107,7 @@ button:hover {
 /* Button style made by Oscar-Jite (See the footer)*/
 button {
   width: 12vw;
-  height: 10vh;
+  height: 9vh;
   margin: 2em auto;
   position: relative;
   padding: 15px 45px;
@@ -134,7 +131,7 @@ i {
 
 button:hover {
   width: 15vw;
-  height: 10vh;
+  height: 9vh;
   margin: 2em auto;
   position: relative;
   padding: 15px 45px;
@@ -189,27 +186,26 @@ footer {
   flex-direction: column;
   align-items: center;
   background-color: rgba(11, 30, 38, 0.9);
-  height: 10em;
-  margin-top: auto;
+  height: auto;
 }
 
 .footer-link {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   width: 90%;
-  padding: 1em;
+  padding: 2em;
   border-bottom: solid;
   border-color: rgb(23, 50, 70);
 }
 
 .footer-info {
   font-size: 0.9rem;
-  margin: 2em;
+  margin: 3em;
 }
 
 /* Link styles */
 a {
-  color: var(--orange);
+  color: rgb(255, 125, 37);
 }
 
 a:hover {

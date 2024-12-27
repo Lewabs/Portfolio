@@ -4,16 +4,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>freeCodeCamp Survey Form</title>
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  <title>Survey Form</title>
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
   <main>
     <div class="title-form">
-      <h1>freeCodeCamp Survey Form</h1>
+      <h1>FreeCodeCamp - Survey Form</h1>
       <p>This is my first project with FreeCodeCamp, so please be lenient !</p>
     </div>
 
@@ -39,8 +40,7 @@
 
       <!-- Select, radios & checkbox -->
       <div class="select-form">
-        <label for="dropdown" class="label-title">If you had to choose one type of game, which one would you choose
-          ? *</label>
+        <label for="dropdown" class="label-title">What is your favorite video game style ? *</label>
         <select id="dropdown" required>
           <option value="" disabled selected>(Select an option)</option>
           <option value="shooter">Shooter</option>
@@ -50,8 +50,6 @@
           <option value="fighting">Fighting</option>
           <option value="survival">Survival</option>
           <option value="horror">Horror</option>
-          <option value="card">Card Game</option>
-          <option value="racing">Racing</option>
           <option value="other">Another style</option>
           <option value="any">I'm a looser I don't like video games.</option>
         </select>
@@ -113,10 +111,6 @@
         <label for="T1">
           <input type="checkbox" id="T1" name="fav-esport-team" value="T1" />
           T1
-        </label>
-        <label for="faze">
-          <input type="checkbox" id="faze" name="fav-esport-team" value="Faze" />
-          Faze Clan
         </label>
         <label for="other">
           <input type="checkbox" id="other" name="fav-esport-team" value="other" />
